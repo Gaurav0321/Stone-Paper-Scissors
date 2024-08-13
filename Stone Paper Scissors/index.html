@@ -8,78 +8,9 @@
 <body>
   <div class="layout" align="center">
     <h2 >Stone Paper Scissors</h2>
-  <button class="button" onclick=" 
-  alert('You have Choosen Stone')
-  let randomNumber = Math.random()*3;
-  let cpuChoice;
-  if(randomNumber>=0 && randomNumber<=1){
-    cpuChoice='Stone';
-  }else if(randomNumber>1 && randomNumber<=2){
-    cpuChoice='Paper';
-  }else if(randomNumber>2 && randomNumber<=3){
-    cpuChoice='Scissors';
-  }else{
-    alert('Bot Detected!!!');
-  }
-  if(cpuChoice === 'Paper'){
-    alert('Cpu choosed Paper')
-    alert('Oops! You Loose');
-  }else if(cpuChoice === 'Scissors'){
-    alert('Cpu choosed Scissors')
-    alert('Hurray You Won!!');
-  }else{
-    alert('Cpu choosed Stone')
-    alert('You Leveled with CPU . Its a Tie!');
-  }
-    "><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h480l-57-400H297l-57 400Zm240-480q17 0 28.5-11.5T520-720q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720q0 17 11.5 28.5T480-680Zm113 0h70q30 0 52 20t27 49l57 400q5 36-18.5 63.5T720-120H240q-37 0-60.5-27.5T161-211l57-400q5-29 27-49t52-20h70q-3-10-5-19.5t-2-20.5q0-50 35-85t85-35q50 0 85 35t35 85q0 11-2 20.5t-5 19.5ZM240-200h480-480Z"/></svg>Stone</button>
-  <button class="button" onclick=" 
-  alert('You have Choosen Paper')
-  let randomNumber = Math.random()*3;
-  let cpuChoice;
-  if(randomNumber>=0 && randomNumber<=1){
-    cpuChoice='Stone';
-  }else if(randomNumber>1 && randomNumber<=2){
-    cpuChoice='Paper';
-  }else if(randomNumber>2 && randomNumber<=3){
-    cpuChoice='Scissors';
-  }else{
-    alert('Bot Detected!!!');
-  }
-  if(cpuChoice === 'Paper'){
-    alert('Cpu choosed Paper')
-    alert('You Leveled with CPU . Its a Tie!');
-  }else if(cpuChoice === 'Scissors'){
-    alert('Cpu choosed Scissors')
-    alert('Oops! You Loose');
-  }else{
-    alert('Cpu choosed Stone')
-    alert('Hurray You Won!!!');
-  }
-    "><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>Paper</button>
-  <button class="button" onclick=" 
-  alert('You have Choosen Paper')
-  let randomNumber = Math.random()*3;
-  let cpuChoice;
-  if(randomNumber>=0 && randomNumber<=1){
-    cpuChoice='Stone';
-  }else if(randomNumber>1 && randomNumber<=2){
-    cpuChoice='Paper';
-  }else if(randomNumber>2 && randomNumber<=3){
-    cpuChoice='Scissors';
-  }else{
-    alert('Bot Detected!!!');
-  }
-  if(cpuChoice === 'Paper'){
-    alert('Cpu choosed Paper')
-    alert('Hurray You Won!!!');
-  }else if(cpuChoice === 'Scissors'){
-    alert('Cpu choosed Scissors')
-    alert('You Leveled with CPU . Its a Tie!');
-  }else{
-    alert('Cpu choosed Stone')
-    alert('Oops! You Loose');
-  }
-    "><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M760-120 480-400l-94 94q8 15 11 32t3 34q0 66-47 113T240-80q-66 0-113-47T80-240q0-66 47-113t113-47q17 0 34 3t32 11l94-94-94-94q-15 8-32 11t-34 3q-66 0-113-47T80-720q0-66 47-113t113-47q66 0 113 47t47 113q0 17-3 34t-11 32l494 494v40H760ZM600-520l-80-80 240-240h120v40L600-520ZM240-640q33 0 56.5-23.5T320-720q0-33-23.5-56.5T240-800q-33 0-56.5 23.5T160-720q0 33 23.5 56.5T240-640Zm240 180q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6ZM240-160q33 0 56.5-23.5T320-240q0-33-23.5-56.5T240-320q-33 0-56.5 23.5T160-240q0 33 23.5 56.5T240-160Z"/></svg>Scissors</button>
+  <button class="button" onclick="ChoicersWin('Stone')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h480l-57-400H297l-57 400Zm240-480q17 0 28.5-11.5T520-720q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720q0 17 11.5 28.5T480-680Zm113 0h70q30 0 52 20t27 49l57 400q5 36-18.5 63.5T720-120H240q-37 0-60.5-27.5T161-211l57-400q5-29 27-49t52-20h70q-3-10-5-19.5t-2-20.5q0-50 35-85t85-35q50 0 85 35t35 85q0 11-2 20.5t-5 19.5ZM240-200h480-480Z"/></svg>Stone</button>
+  <button class="button" onclick="ChoicersWin('Paper')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>Paper</button>
+  <button class="button" onclick="ChoicersWin('Scissors')"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M760-120 480-400l-94 94q8 15 11 32t3 34q0 66-47 113T240-80q-66 0-113-47T80-240q0-66 47-113t113-47q17 0 34 3t32 11l94-94-94-94q-15 8-32 11t-34 3q-66 0-113-47T80-720q0-66 47-113t113-47q66 0 113 47t47 113q0 17-3 34t-11 32l494 494v40H760ZM600-520l-80-80 240-240h120v40L600-520ZM240-640q33 0 56.5-23.5T320-720q0-33-23.5-56.5T240-800q-33 0-56.5 23.5T160-720q0 33 23.5 56.5T240-640Zm240 180q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6ZM240-160q33 0 56.5-23.5T320-240q0-33-23.5-56.5T240-320q-33 0-56.5 23.5T160-240q0 33 23.5 56.5T240-160Z"/></svg>Scissors</button>
 </div>
 <script>
 </script>
